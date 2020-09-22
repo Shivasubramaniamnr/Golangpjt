@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(card)
 }
 
+// newcard function to create new card deck
 func NewCard() string {
-
 	return "five of diamonds"
 }
