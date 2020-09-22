@@ -1,14 +1,11 @@
 package main
 
-import "fmt"
-
 func main() {
-	card := NewCard()
+	cards := []string{"Ace of Spades", "Two of Clover", newCard()}
 
-	fmt.Println(card)
+	println(cards)
 }
 
-// newcard function to create new card deck
-func NewCard() string {
+func newCard() string {
 	return "five of diamonds"
 }
