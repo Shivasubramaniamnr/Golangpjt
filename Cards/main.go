@@ -9,7 +9,8 @@ func main() {
 	for k := 0; k <= 10; k++ {
 		fmt.Println("Please enter 2 Letter state name and city name , to stop enter STOP")
 
-		fmt.Scanln(&stname, &ctname)
+		fmt.Scanln(&stname)
+		fmt.Scanln(&ctname)
 
 		if stname == "STOP" {
 			break
