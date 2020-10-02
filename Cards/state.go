@@ -1,18 +1,22 @@
 package main
 
-import "fmt"
 var statename string
 
-func sName (string state) string{
-if state == "TN"
-   return ("Tamil Nadu")
+func sName(state string) string {
+	if state == "TN" {
+		statename = "Tamil Nadu"
+	}
+	return statename
 }
 
-func stateName (string state) string{
+func stateName(state string) string {
 	switch state {
-	case "TN": statename = "Tamil Nadu"
-	case "AP": statename = "Andhra Pradesh"
-	case "DL": statename = "Delhi"
+	case "TN":
+		statename = "Tamil Nadu"
+	case "AP":
+		statename = "Andhra Pradesh"
+	case "DL":
+		statename = "Delhi"
 	}
-	return (statename)
+	return statename
 }
