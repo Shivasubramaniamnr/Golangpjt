@@ -21,10 +21,10 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	pos = sort.SearchStrings(cityNames, city)
-	if pos > 0 {
-		cityString = strings.Join(cityNames, ",")
-	} else {
+	if pos == len(cityNames) {
 		cityString = "City does not belong to the State"
+	} else {
+		cityString = strings.Join(cityNames, ",")
 	}
 
 	return cityString
