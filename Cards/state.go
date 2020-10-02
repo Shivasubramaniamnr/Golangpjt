@@ -1,17 +1,17 @@
 package main
 
-var statename string
+var cityNames []string
 
-func stateName(state string) string {
+func cityName(state string) []string {
 	switch state {
 	case "TN":
-		statename = "Tamil Nadu"
+		cityNames = append(cityNames, "Chennai", "Madurai", "Trichy", "Nellai", "Coimbatore", "Salem")
 	case "AP":
-		statename = "Andhra Pradesh"
+		cityNames = append(cityNames, "Vizag", "Guntur", "Nellore", "Vijaywada")
 	case "DL":
-		statename = "Delhi"
+		cityNames = append(cityNames, "Rohini", "PitamPura", "Karol Bagh", "CP")
 	default:
-		statename = "State Abbreviation not found"
+		cityNames = append(cityNames, "No information about cities found")
 	}
-	return statename
+	return cityNames
 }

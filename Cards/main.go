@@ -10,5 +10,5 @@ func main() {
 	fmt.Scanln(&strname)
 
 	// stateName func is to find the abbreviation of 2 letter state code
-	fmt.Println(stateName(strname))
+	fmt.Println(cityName(strname))
 }
