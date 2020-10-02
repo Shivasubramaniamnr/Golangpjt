@@ -10,6 +10,8 @@ func stateName(state string) string {
 		statename = "Andhra Pradesh"
 	case "DL":
 		statename = "Delhi"
+	default:
+		statename = "State Abbreviation not found"
 	}
 	return statename
 }
