@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -11,6 +10,8 @@ var cityString string
 var pos int
 
 func cityName(state string, city string) string {
+	cityNames = nil
+
 	switch state {
 	case "TN":
 		cityNames = append(cityNames, "Chennai", "Madurai", "Trichy", "Nellai", "Coimbatore", "Salem")
@@ -22,7 +23,6 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	sort.Strings(cityNames)
-	fmt.Println(cityNames)
 	pos = sort.StringSlice(cityNames).Search(city)
 
 	if pos == len(cityNames) {
