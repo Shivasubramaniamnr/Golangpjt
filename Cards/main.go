@@ -14,6 +14,7 @@ func main() {
 
 }
 
+// this is a function to return a new card
 func newCard() string {
 	return "five of diamonds"
 }
