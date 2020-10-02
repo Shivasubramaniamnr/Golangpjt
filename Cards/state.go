@@ -1,8 +1,11 @@
 package main
 
-var cityNames []string
+import "strings"
 
-func cityName(state string) []string {
+var cityNames []string
+var cityString string
+
+func cityName(state string) string {
 	switch state {
 	case "TN":
 		cityNames = append(cityNames, "Chennai", "Madurai", "Trichy", "Nellai", "Coimbatore", "Salem")
@@ -13,5 +16,6 @@ func cityName(state string) []string {
 	default:
 		cityNames = append(cityNames, "No information about cities found")
 	}
-	return cityNames
+	cityString = strings.Join(cityNames, ",")
+	return cityString
 }
