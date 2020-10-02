@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"sort"
 	"strings"
 )
@@ -21,6 +22,8 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	pos = sort.SearchStrings(cityNames, city)
+	fmt.Println(pos)
+
 	if pos == len(cityNames) {
 		cityString = "City does not belong to the State"
 	} else {
