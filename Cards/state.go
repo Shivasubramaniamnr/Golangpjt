@@ -25,7 +25,7 @@ func cityName(state string, city string) string {
 	sort.Strings(cityNames)
 	pos = sort.StringSlice(cityNames).Search(city)
 
-	if pos == len(cityNames) {
+	if pos > len(cityNames) {
 		cityString = "City does not belong to the State"
 	} else {
 		cityString = strings.Join(cityNames, ",")
