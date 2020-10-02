@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"sort"
 	"strings"
 )
@@ -22,7 +23,7 @@ func cityName(state string, city string) string {
 	}
 	sort.Strings(cityNames)
 	pos = sort.StringSlice(cityNames).Search(city)
-	fmt.println(pos)
+	fmt.Println(pos)
 
 	if pos == len(cityNames) {
 		cityString = "City does not belong to the State"
