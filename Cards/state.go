@@ -22,7 +22,7 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	sort.Strings(cityNames)
-	fmt.Println(pos)
+	fmt.Println(cityNames)
 	pos = sort.StringSlice(cityNames).Search(city)
 
 	if pos == len(cityNames) {
