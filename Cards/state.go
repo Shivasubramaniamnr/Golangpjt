@@ -24,8 +24,8 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	sort.Strings(cityNames)
-	pos = sort.SearchStrings(cityNames, city)
 	fmt.Println(pos)
+	pos = sort.SearchStrings(cityNames, city)
 
 	if pos > len(cityNames) {
 		cityString = "City does not belong to the State"
