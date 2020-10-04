@@ -15,17 +15,18 @@ func cityName(state string, city string) string {
 
 	switch state {
 	case "TN":
-		cityNames = append(cityNames, "Chennai", "Madurai", "Trichy", "Nellai", "Coimbatore", "Salem")
+		cityNames = []string{"Chennai", "Madurai", "Trichy", "Nellai", "Coimbatore", "Salem"}
 	case "AP":
-		cityNames = append(cityNames, "Vizag", "Guntur", "Nellore", "Vijaywada")
+		cityNames = []string{"Vizag", "Guntur", "Nellore", "Vijaywada"}
 	case "DL":
-		cityNames = append(cityNames, "Rohini", "PitamPura", "Karol Bagh", "CP")
+		cityNames = []string{"Rohini", "PitamPura", "Karol Bagh", "CP"}
 	default:
-		cityNames = append(cityNames, "No information about cities found")
+		cityNames = []string{"No information about cities found"}
 	}
 	sort.Strings(cityNames)
-	fmt.Println(pos)
+
 	pos = sort.SearchStrings(cityNames, city)
+	fmt.Println(pos)
 
 	if pos > len(cityNames) {
 		cityString = "City does not belong to the State"
