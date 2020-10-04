@@ -20,8 +20,6 @@ func cityName(state string, city string) string {
 		cityNames = []string{"Vizag", "Guntur", "Nellore", "Vijaywada"}
 	case "DL":
 		cityNames = []string{"Rohini", "PitamPura", "Karol Bagh", "CP"}
-	default:
-		cityNames = []string{"No information about cities found"}
 	}
 	sort.Strings(cityNames)
 
