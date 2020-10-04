@@ -24,8 +24,7 @@ func cityName(state string, city string) string {
 		cityNames = append(cityNames, "No information about cities found")
 	}
 	sort.Strings(cityNames)
-	pos = sort.StringSlice(cityNames).Search(city)
-	fmt.Println(city)
+	pos = sort.SearchStrings(cityNames, city)
 	fmt.Println(pos)
 
 	if pos > len(cityNames) {
