@@ -25,6 +25,7 @@ func cityName(state string, city string) string {
 	}
 	sort.Strings(cityNames)
 	pos = sort.StringSlice(cityNames).Search(city)
+	fmt.Println(city)
 	fmt.Println(pos)
 
 	if pos > len(cityNames) {
