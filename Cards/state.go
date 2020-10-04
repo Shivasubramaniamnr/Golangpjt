@@ -27,7 +27,7 @@ func cityName(state string, city string) string {
 	fmt.Println(cityNames)
 	fmt.Println(pos)
 
-	if pos > len(cityNames) {
+	if pos <= len(cityNames) {
 		cityString = "City does not belong to the State"
 	} else {
 		cityString = strings.Join(cityNames, ",")
