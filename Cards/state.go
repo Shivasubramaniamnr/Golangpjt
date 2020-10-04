@@ -12,6 +12,7 @@ var pos int
 
 func cityName(state string, city string) string {
 	cityNames = nil
+	pos = nil
 
 	switch state {
 	case "TN":
