@@ -24,7 +24,7 @@ func cityName(state string, city string) string {
 	}
 	sort.Strings(cityNames)
 
-	pos = sort.SearchStrings(cityNames, city)
+	pos = sort.SearchStrings(cityNames, "Chennai")
 	fmt.Println(cityNames)
 	fmt.Println(pos)
 
