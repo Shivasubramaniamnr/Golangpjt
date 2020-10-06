@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"sort"
-	"strings"
 )
 
 var cityNames []string
@@ -24,12 +22,10 @@ func cityName(state string, city string) string {
 	}
 	sort.Strings(cityNames)
 
-	pos = sort.SearchStrings(cityNames, "Chennai")
-	fmt.Println(cityNames)
-	fmt.Println(pos)
+	pos = sort.SearchStrings(cityNames, city)
 
-	if pos <= len(cityNames) {
-		cityString = strings.Join(cityNames, ",")
+	if city == cityNames[pos] {
+		cityString = "City is found in the state"
 	} else {
 		cityString = "City does not belong to the State"
 	}
